@@ -1,0 +1,331 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 5px solid #42b883;
+}
+
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+#logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+#logo img {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-top: -10px;
+    animation: vue-beat infinite 5s linear;
+}
+
+@keyframes vue-beat {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.125);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#brand {
+    display: block;
+    float: left;
+    margin: 0px;
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+
+#menu ul {
+    line-height: 85px;
+    width: 60%;
+    float: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin: 0px 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #35495e;
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    color: #42b883;
+}
+
+#slider {
+    width: 100%;
+    height: 350px;
+    line-height: 138px;
+    color: white;
+    
+    /* Gradient */
+    background: rgba(33,242,148,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(33,242,148,1) 0%, rgba(64,186,131,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(33,242,148,1)), color-stop(100%, rgba(64,186,131,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(33,242,148,1) 0%, rgba(64,186,131,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(33,242,148,1) 0%, rgba(64,186,131,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(33,242,148,1) 0%, rgba(64,186,131,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(33,242,148,1) 0%, rgba(64,186,131,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21f294', endColorstr='#40ba83', GradientType=1 );
+}
+
+#slider h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.slider-btn {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 12px;
+    width: 140px;
+    height: 30px;
+    margin: 0px auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    transition: 300ms all ease-in-out;
+}
+
+.slider-btn:hover {
+    background: white;
+    color: #42b883;
+}
+
+#slider.slider-small {
+    height: 150px;
+}
+
+#slider.slider-small h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    text-align: center;
+}
+
+#content {
+    width: 70%;
+    float: left;
+    min-height: 650px;
+    margin-right: 25px;
+}
+
+.content-title {
+    color: #35495e;
+    font-size: 38px;
+    text-align: left;
+}
+
+#sidebar {
+    width: 25%;
+    float: left;
+}
+
+.sidebar-item {
+    background: #35495e;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.sidebar-item .btn {
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    color: #42b883;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 60%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background: #35495e;
+}
+
+.btn-light {
+    background: white;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 0px 2px #444 inset;
+    transition: 300ms all;
+}
+
+input[type="text"]:focus, , input[type="email"]:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35) inset;
+}
+
+.form-title {
+    color: #35495e;
+    font-size: 38px;
+    text-align: center;
+}
+
+.form-medium {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.form-medium label {
+    display: block;
+    float: left;
+    text-align: left;
+    margin: 15px 0px 5px 0px;
+    font-size: 16px;
+}
+
+.form-medium input[type="submit"] {
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 20px;
+    transition: 300ms all;
+}
+
+.form-medium input[type="submit"]:hover {
+    border-radius: 20px;
+}
+
+#footer {
+    width: 100%;
+    height: 70px;
+    background: #35495e;
+    color: white;
+    line-height: 70px;
+}
+
+#footer p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.post-item {
+    width: 100%;
+    border-bottom: 1px solid #35495e;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+.post-item .img-wrap {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+}
+
+.post-item .img-wrap img {
+    height: 100%;
+}
+
+.post-item h2 {
+    display: block;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+.post-item .date {
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.post-item a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 300ms all;
+}
+
+.post-item a:hover {
+    color: #42b883;
+    text-decoration: underline;
+}
+
+.post-item-detail .img-wrap {
+    float: none;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.post-item-detail .img-wrap img {
+    width: 100%;
+    height: auto;
+    margin-top: -25%;
+}
+
+.post-item-detail .content-title {
+    color: white;
+    font-size: 64px;
+    margin: -65px 0px 0px 20px;
+    text-shadow: 5px -5px 3px rgba(0, 0, 0, 0.2);
+}

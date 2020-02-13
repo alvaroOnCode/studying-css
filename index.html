@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="center">
+            <!-- Logo -->
+            <div id="logo">
+                <a href="index.html"><img src="./assets/images/logo-vue.png" class="app-logo" alt="Logo"></a>
+                <span id="brand">
+                    <strong>Studying</strong>CSS
+                </span>
+            </div>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Clear Floats -->
+    <div class="clearfix"></div>
+
+    <div id="slider" class="slider-large">
+        <h1>Welcome to this template used to practice CSS3</h1>
+        <a href="#" class="slider-btn">Go to Blog</a>
+    </div>
+
+    <div class="center">
+        <section id="content">
+            <h2 class="content-title">Last posts</h2>
+
+            <!-- Posts list -->
+            <div id="posts">
+                <article id="post-template" class="post-item" style="display: none;">
+                    <div class="img-wrap">
+                        <img src="" alt="">
+                    </div>
+    
+                    <h2></h2>
+                    <span class="date"></span>
+                    <a href="#">Read more</a>
+
+                    <!-- Clear Floats -->
+                    <div class="clearfix"></div>
+                </article>
+            </div>
+        </section>
+
+        <aside id="sidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>What to do</h3>
+                <a href="#" class="btn">Create post</a>
+            </div>
+
+            <div id="search" class="sidebar-item">
+                <h3>Search</h3>
+                <p>Find any post</p>
+                <form action="#">
+                    <input type="text" name="search" id="input-search-text">
+                    <input type="submit" value="Search!" class="btn btn-light">
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Clear Floats -->
+    <div class="clearfix"></div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>&copy; Learning with Víctor Robles' JavaScript Master</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/post.js" lang="javascript"></script>
+</body>
+</html>

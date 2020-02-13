@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="center">
+            <!-- Logo -->
+            <div id="logo">
+                <a href="index.html"><img src="./assets/images/logo-vue.png" class="app-logo" alt="Logo"></a>
+                <span id="brand">
+                    <strong>Studying</strong>CSS
+                </span>
+            </div>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Clear Floats -->
+    <div class="clearfix"></div>
+
+    <div class="center">
+        <section id="content">
+            <!-- Post -->
+            <article class="post-item post-item-detail">
+                <div class="img-wrap">
+                    <img src="https://avatars1.githubusercontent.com/u/499550?v=4" alt="Evan You">
+                </div>
+                <h1 class="content-title">Coffe with Evan You</h1>
+                <span class="date">1 week ago</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis ipsum, ultricies eget laoreet id, volutpat a mi. Nulla nulla tellus, feugiat suscipit imperdiet lacinia, cursus nec mi. Vivamus ultrices vehicula dolor, faucibus porta leo volutpat at. Phasellus cursus nunc sit amet consectetur cursus. Morbi orci erat, euismod non lobortis non, congue mattis velit. Fusce magna eros, volutpat sed tortor ut, rutrum interdum dui. Phasellus consequat mollis urna, commodo convallis quam ullamcorper sit amet. Suspendisse fermentum eu nulla eget placerat. Nunc sed ultricies dolor. Morbi eros sem, consectetur vel facilisis nec, volutpat a risus. Phasellus non odio justo. Aliquam ut elit sit amet mi mollis egestas at in ante.</p>
+                <p>Morbi efficitur consectetur dui sit amet facilisis. Nullam a tincidunt lorem. Suspendisse bibendum erat ac rhoncus faucibus. Nam vel porta augue. Donec risus ex, condimentum non leo at, elementum sagittis mi. Quisque quis est at felis aliquet tempus. Cras varius dolor at tempor efficitur. Proin vel justo at nibh cursus egestas. Nam venenatis augue sapien, vel volutpat sapien hendrerit vel. In dignissim augue nisl, ut fringilla justo vulputate a.</p>
+
+                <!-- Clear Floats -->
+                <div class="clearfix"></div>
+            </article>
+        </section>
+
+        <aside id="sidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>What to do</h3>
+                <a href="#" class="btn">Create post</a>
+            </div>
+
+            <div id="search" class="sidebar-item">
+                <h3>Search</h3>
+                <p>Find any post</p>
+                <form action="#">
+                    <input type="text" name="search" id="input-search-text">
+                    <input type="submit" value="Search!" class="btn">
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Clear Floats -->
+    <div class="clearfix"></div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>&copy; Learning with Víctor Robles' JavaScript Master</p>
+        </div>
+    </footer>
+</body>
+</html>
